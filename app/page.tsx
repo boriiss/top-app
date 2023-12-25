@@ -1,5 +1,17 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Исправленный заголок',
+};
+
+export async function GenerateMetadata(): Promise<Metadata> {
+  return {
+    title: 'ComputedMeta',
+  };
+}
+
 
 export default function Home() {
   return (
