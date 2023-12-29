@@ -1,9 +1,23 @@
 import type { Metadata } from 'next';
-import { Open_Sans } from 'next/font/google';
+import { Noto_Sans, Inter } from 'next/font/google';
+
 import './globals.css';
 import React from 'react';
 
-const inter = Open_Sans({ subsets: ['latin'] });
+const noto_Sans = Noto_Sans({
+  variable: '--noto-sans-font',
+  weight: ['300', '400', '500', '700'],
+  style: ['normal'],
+  fallback: ['sans-serif'],
+  subsets: ['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext'],
+  preload: true,
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--inter-font',
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: 'Наш проект',
@@ -17,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${noto_Sans.className}`}>{children}</body>
     </html>
   );
 }
