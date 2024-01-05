@@ -21,5 +21,9 @@
 		"plugin:@typescript-eslint/eslint-recommended",
 		"plugin:@typescript-eslint/recommended",
     "eslint:recommended", "next"
-	]
+	],
+	"globals": {
+		"JSX": true,
+		"React": true
+	}
 }

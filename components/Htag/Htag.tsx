@@ -1,5 +1,3 @@
-
-import React, { JSX } from 'react';
 import { HtagProps } from './Htag.props';
 import styles from './Htag.module.css';
 import cn from 'classnames';

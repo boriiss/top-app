@@ -13,11 +13,11 @@ export async function GenerateMetadata(): Promise<Metadata> {
 }
 
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <>
-      <Htag tag="h2">Hello</Htag>
-      <Button appereance="primary">Кнопка</Button>
+      <Htag tag='h2'>Hello</Htag>
+      <Button appereance="primary" className='test'>Кнопка</Button>
       <Button appereance="ghost">Кнопка</Button>
     </>
   );
