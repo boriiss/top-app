@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Htag } from './../components/Htag/Htag';
-import { Button } from '@/components/Button/Button';
+import { Button } from './../components/Button/Button';
 
 export const metadata: Metadata = {
   title: 'Исправленный заголок',
