@@ -20,7 +20,9 @@
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
 		"plugin:@typescript-eslint/recommended",
-    "eslint:recommended", "next"
+    "eslint:recommended",
+		"next",
+		"plugin:react-hooks/recommended"
 	],
 	"globals": {
 		"JSX": true,
